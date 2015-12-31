@@ -1,6 +1,151 @@
-.landing {
-	background-image: url("images/bluepattern.png");
+* {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
 }
-p {
-	font-style: italic;
+
+body {
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	margin: 0 auto;
+	max-width: 1500px;
+	width: 100%;
 }
+
+img {
+	max-width: 80%;
+}
+
+h1 {
+	font: 800 24px "Open Sans", sans-serif;
+	padding-top: 1.5em;
+}
+
+h2 {
+	font: 600 24px "Open Sans", sans-serif;
+}
+
+h3 {
+	width: 150px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+h4 {
+	font: 600 9px "Open Sans", sans-serif;
+	margin: 4rem auto 0;
+}
+
+span {
+	font: 600 18px "Open Sans", sans-serif;
+	display: block;
+	line-height: 2;
+}
+
+header.header {
+	background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+	background-size: cover;
+	height: 500px;
+	padding: 0 5em;
+}
+	.header h1 {
+		color: #fff;
+		margin-bottom: 4em;
+		text-align: left;
+	}
+	.header h2 {
+		color: #fff;
+		text-align: center;
+	}
+	.header h3 {
+		background: #f9e42e;
+		margin: 3em auto;
+		font: 800 14px "Open Sans", sans-serif;
+		color: #033048;
+	}
+
+section {
+	background: #f0efef;
+	height: 420px;
+	color: #606161;
+	padding: 0 15em;
+}
+	.benefits h2 {
+		font: 600 20px "Open Sans", sans-serif;
+		color: #033048;
+	}
+	.benefits p, ul {
+		font: 300 13px "Open Sans", sans-serif;
+	}
+	.benefits p {
+		margin: 1em 0 2em 0.5em ;
+		width: 90%;
+	}
+	.benefits ul {
+		list-style: disc inside;
+		margin-left: 2em;
+	}
+	article {
+			margin: auto;
+			max-width: 32%;
+			border: 2px solid red;
+		}
+		#left {
+			float: left;	
+		}
+		#right {
+			float: right;
+		}
+	
+
+blockquote.quote {
+	background: url(../images/testimonial_bg.jpg);
+	background-size: cover;
+	height: 350px;
+	font: 300 italic 18px "Open Sans", sans-serif;
+	color: #f0efef;
+	text-align: center;
+	clear:both;
+}
+	.quote p {
+		margin: 0 auto;
+		width: 18em;
+		padding: 95px 10px;
+	}
+
+div.signup {
+	background-color: #f9e42e;
+	height: 95px;
+	margin: 0 auto;
+	padding-top: 2.6em;
+}
+	.signup h3 {
+		margin: 0 auto;
+		font: 800 12px "Open Sans", sans-serif;
+		color: #fff;
+		background: #033048;
+	}
+
+footer.footer {
+	height: 300px;
+	background: #121212;
+	text-align: center;
+	color: #fff;
+}
+	.footer h1 {
+		text-align: inherit;
+		color: #f9e42e;
+		margin-bottom: 2em;
+	}
+	.footer ul {
+		padding-bottom: 2em;
+	}
+	.footer li {
+		display: inline-block;
+		padding: 0 1.2em;
+	}
+
+screen @media 
