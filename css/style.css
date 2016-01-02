@@ -6,12 +6,12 @@
 
 body {
 	font-family: Open Sans, Helvetica, Arial, sans-serif;
-	color: #000;
 	font-size: 12px;
-	line-height: 1.4;
-	margin: 0 auto;
-	max-width: 1500px;
+	color: #000;
 	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+	line-height: 1.4;
 }
 
 img {
@@ -29,14 +29,14 @@ h2 {
 
 h3 {
 	width: 150px;
+	padding: 10px;
 	text-align: center;
 	border-radius: 5px;
-	padding: 10px;
 }
 
 h4 {
 	font: 600 9px "Open Sans", sans-serif;
-	margin: 4rem auto 0;
+	margin-top: 4rem;
 }
 
 span {
@@ -45,11 +45,10 @@ span {
 	line-height: 2;
 }
 
-header.header {
+.header {
 	background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
 	background-size: cover;
 	height: 500px;
-	padding: 0 5em;
 }
 	.header h1 {
 		color: #fff;
@@ -62,16 +61,15 @@ header.header {
 	}
 	.header h3 {
 		background: #f9e42e;
-		margin: 3em auto;
 		font: 800 14px "Open Sans", sans-serif;
 		color: #033048;
+		margin: 3em auto;
 	}
 
-section {
+.benefits {
 	background: #f0efef;
-	height: 420px;
 	color: #606161;
-	padding: 0 15em;
+	height: 420px;
 }
 	.benefits h2 {
 		font: 600 20px "Open Sans", sans-serif;
@@ -81,71 +79,114 @@ section {
 		font: 300 13px "Open Sans", sans-serif;
 	}
 	.benefits p {
-		margin: 1em 0 2em 0.5em ;
-		width: 90%;
+		margin: 1em 0 2em 0.5em;
 	}
 	.benefits ul {
-		list-style: disc inside;
 		margin-left: 2em;
+		list-style: disc inside;
 	}
-	article {
-			margin: auto;
-			max-width: 32%;
-			border: 2px solid red;
-		}
-		#left {
-			float: left;	
-		}
-		#right {
-			float: right;
-		}
-	
 
-blockquote.quote {
+.quote {
 	background: url(../images/testimonial_bg.jpg);
 	background-size: cover;
-	height: 350px;
 	font: 300 italic 18px "Open Sans", sans-serif;
 	color: #f0efef;
+	clear: both;
+	height: 350px;
 	text-align: center;
-	clear:both;
 }
 	.quote p {
 		margin: 0 auto;
-		width: 18em;
-		padding: 95px 10px;
+		padding: 95px 0;
 	}
 
-div.signup {
+.signup {
 	background-color: #f9e42e;
 	height: 95px;
 	margin: 0 auto;
 	padding-top: 2.6em;
 }
 	.signup h3 {
-		margin: 0 auto;
 		font: 800 12px "Open Sans", sans-serif;
-		color: #fff;
 		background: #033048;
+		color: #fff;
+		margin: 0 auto;
 	}
 
-footer.footer {
-	height: 300px;
+.footer {
 	background: #121212;
-	text-align: center;
 	color: #fff;
+	height: 300px;
+	text-align: center;
 }
 	.footer h1 {
-		text-align: inherit;
 		color: #f9e42e;
 		margin-bottom: 2em;
+		text-align: inherit;
 	}
 	.footer ul {
 		padding-bottom: 2em;
+		max-width: none;
 	}
 	.footer li {
 		display: inline-block;
 		padding: 0 1.2em;
 	}
 
-screen @media 
+
+
+@media screen and (min-width: 150px) {
+	header, section {
+		padding: 0 10px;
+	}
+		.header h1 {
+			text-align: center;
+		}
+
+	section {
+
+	}
+	article {
+		clear: both;
+		width: 100%;
+		margin: 2em auto 1em;
+		padding: 0;
+	}
+		#left, #right {
+
+		}
+			#left p, #left ul {
+				max-width: 100%;
+			}
+
+	.quote p {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	header, section {
+		padding: 0 7em;
+	}
+		header.header h1 {
+			text-align: left;
+		}
+
+	#left, #right {
+		clear: none;
+	} 
+		#left {
+			float: left;
+			width: 75%;
+		}
+		#right {
+			float: right;
+			width: 25%;
+		}
+			#left p, #left ul {
+				max-width: 45%
+			}
+	blockquote.quote p {
+		width: 21%;
+	}
+}
