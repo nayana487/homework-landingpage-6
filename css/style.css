@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: #000;
 	width: 100%;
@@ -40,9 +40,8 @@ h4 {
 }
 
 span {
-	font: 600 18px "Open Sans", sans-serif;
+	font: 600 18px/2 "Open Sans", sans-serif;
 	display: block;
-	line-height: 2;
 }
 
 .header {
@@ -50,41 +49,42 @@ span {
 	background-size: cover;
 	height: 500px;
 }
-	.header h1 {
-		color: #fff;
-		margin-bottom: 4em;
-		text-align: left;
-	}
-	.header h2 {
-		color: #fff;
-		text-align: center;
-	}
-	.header h3 {
-		background: #f9e42e;
-		font: 800 14px "Open Sans", sans-serif;
-		color: #033048;
-		margin: 3em auto;
-	}
+.header h1 {
+	color: #fff;
+	margin-bottom: 4em;
+	text-align: left;
+}
+.header h2 {
+	color: #fff;
+	text-align: center;
+}
+.header h3 {
+	background: #f9e42e;
+	font: 800 14px "Open Sans", sans-serif;
+	color: #033048;
+	margin: 3em auto;
+}
 
 .benefits {
 	background: #f0efef;
 	color: #606161;
 	height: 420px;
 }
-	.benefits h2 {
-		font: 600 20px "Open Sans", sans-serif;
-		color: #033048;
-	}
-	.benefits p, ul {
-		font: 300 13px "Open Sans", sans-serif;
-	}
-	.benefits p {
-		margin: 1em 0 2em 0.5em;
-	}
-	.benefits ul {
-		margin-left: 2em;
-		list-style: disc inside;
-	}
+.benefits h2 {
+	font: 600 20px "Open Sans", sans-serif;
+
+	color: #033048;
+}
+.benefits p, ul {
+	font: 300 13px "Open Sans", sans-serif;
+}
+.benefits p {
+	margin: 1em 0 2em 0.5em;
+}
+.benefits ul {
+	margin-left: 2em;
+	list-style: disc inside;
+}
 
 .quote {
 	background: url(../images/testimonial_bg.jpg);
@@ -95,10 +95,10 @@ span {
 	height: 350px;
 	text-align: center;
 }
-	.quote p {
-		margin: 0 auto;
-		padding: 95px 0;
-	}
+.quote p {
+	margin: 0 auto;
+	padding: 95px 0;
+}
 
 .signup {
 	background-color: #f9e42e;
@@ -106,12 +106,12 @@ span {
 	margin: 0 auto;
 	padding-top: 2.6em;
 }
-	.signup h3 {
-		font: 800 12px "Open Sans", sans-serif;
-		background: #033048;
-		color: #fff;
-		margin: 0 auto;
-	}
+.signup h3 {
+	font: 800 12px "Open Sans", sans-serif;
+	background: #033048;
+	color: #fff;
+	margin: 0 auto;
+}
 
 .footer {
 	background: #121212;
@@ -119,62 +119,51 @@ span {
 	height: 300px;
 	text-align: center;
 }
-	.footer h1 {
-		color: #f9e42e;
-		margin-bottom: 2em;
-		text-align: inherit;
-	}
-	.footer ul {
-		padding-bottom: 2em;
-		max-width: none;
-	}
-	.footer li {
-		display: inline-block;
-		padding: 0 1.2em;
-	}
-
-
+.footer h1 {
+	color: #f9e42e;
+	margin-bottom: 2em;
+	text-align: inherit;
+}
+.footer ul {
+	padding-bottom: 2em;
+	max-width: none;
+}
+.footer li {
+	display: inline-block;
+	padding: 0 1.2em;
+}
 
 @media screen and (min-width: 150px) {
-	header, section {
+	.header, .benefits {
 		padding: 0 10px;
 	}
-		.header h1 {
-			text-align: center;
-		}
-
-	section {
-
-	}
-	article {
-		clear: both;
-		width: 100%;
-		margin: 2em auto 1em;
-		padding: 0;
+	.header h1 {
+		text-align: center;
 	}
 		#left, #right {
-
+			clear: both;
+			width: 100%;
+			padding: 10px 0;
 		}
-			#left p, #left ul {
-				max-width: 100%;
-			}
-
+		#left p, #left ul {
+			max-width: 100%;
+	}
 	.quote p {
-		width: 50%;
+		width: 51%;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	header, section {
+	.header, .benefits {
 		padding: 0 7em;
 	}
-		header.header h1 {
-			text-align: left;
+	.header h1 {
+		text-align: left;
+	}
+		#left, #right {
+			clear: none;
+			margin: 2em auto 1em;	
 		}
-
-	#left, #right {
-		clear: none;
-	} 
 		#left {
 			float: left;
 			width: 75%;
@@ -183,10 +172,11 @@ span {
 			float: right;
 			width: 25%;
 		}
-			#left p, #left ul {
-				max-width: 45%
-			}
-	blockquote.quote p {
-		width: 21%;
+		#left p, #left ul {
+			max-width: 45%
+		}
+
+	.quote p {
+		width: 23%;
 	}
 }
