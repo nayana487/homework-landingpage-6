@@ -116,10 +116,6 @@ p {
 	color: #033048;
 }
 
-
-
-
-
 .sidebar {
 	width: 25%;
 	margin-top: 60px;
@@ -161,16 +157,12 @@ p {
 	text-align: center;
 } 
 
-
-
-
 .signup {
 	background-color: #f9e42e;
 	height: 140px;
 	margin: 0 auto;
 	padding-top: 40px;
 }
-
 
 .footer {
 	background: #121212;
