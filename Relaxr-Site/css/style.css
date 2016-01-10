@@ -26,28 +26,36 @@ h2 {
 }
 
 h3 {
-	font: 800 20px "Open Sans", sans-serif; 
+	font: 800 1.667em "Open Sans", sans-serif; 
 	background: #033048;
 	color: #fff;
 	margin: 0 auto;
 	width: 220px;
-	padding: 12px 24px;
+	padding: 12px 0;
 	text-align: center;
 	border-radius: 5px;
 }
 
 h4 {
-	font: 600 14px "Open Sans", sans-serif;
+	font: 600 1.1667em "Open Sans", sans-serif;
 	margin-top: 4rem;
 }
 
 p {
-	font: 300 24px "Open Sans", sans-serif;
+	font: 300 2em "Open Sans", sans-serif;
 	padding: 30px 0;
 }
 
 li {
 	display: inline-block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	opacity: 0.7;
 }
 
 /* Header and Navigation
@@ -70,9 +78,12 @@ li {
 	text-align: right;
 }
 .nav li {
-	vertical-align: middle;
 	color: #f9e42e;
 	padding: 0 1em;
+}
+.nav li a:hover {
+	border-bottom: 3px solid;
+	opacity: 1;
 }
 
 /* Wrapper
@@ -82,8 +93,8 @@ li {
 	background: #f0efef;
 }
 .main, .sidebar {
-	display: inline-block;
 	background: #f0efef;
+	display: inline-block;
 	vertical-align: top;
 }
 
@@ -91,7 +102,7 @@ li {
 =================================== */
 
 .main {
-	width: 60.87%; 									/* --------> 240px <-------- */
+	width: 60.87%;		/* --------> 240px <-------- */
 	margin: 50px 0 50px 80px;
 	padding-right: 20px;
 }
@@ -103,13 +114,13 @@ li {
 	margin: 18px 0;
 }
 .article h2 {
-	font: 600 3.333em "Open Sans", sans-serif; 		/* --------> 40px <-------- */
+	font: 600 3.333em "Open Sans", sans-serif;		/* --------> 40px <-------- */
 	color: #033048;
 }
 .article p span {
+	font: 600 1em "Open Sans", sans-serif;		/* --------> 24px <-------- */
 	display: block;
 	text-align: right;
-	font: 600 1em "Open Sans", sans-serif; 			/* --------> 24px <-------- */
 	color: #033048;
 }
 .article p::first-letter {
@@ -123,13 +134,13 @@ li {
 =================================== */
 
 .sidebar {
-	font: 300 2em "Open Sans", sans-serif; 			/* --------> 24px <-------- */
-	width: 20.87%; 									/* --------> 240px <-------- */
+	font: 300 2em "Open Sans", sans-serif;		/* --------> 24px <-------- */
+	width: 20.87%;		/* --------> 240px <-------- */
 	margin-top: 60px;
 	color: #033048;
 }
 .sidebar h2 {
-	font: 800 1.333em "Open Sans", sans-serif; 		/* --------> 32px <-------- */
+	font: 800 1.333em "Open Sans", sans-serif;		/* --------> 32px <-------- */
 }
 .categories, .about {
 	margin-bottom: 32px;
@@ -141,11 +152,11 @@ li {
 	display: list-item;
 }
 .about p {
-	font: 300 0.91667em "Open Sans", sans-serif;	/* --------> 22px <-------- */
+	font: 300 0.91667em "Open Sans", sans-serif;		/* --------> 22px <-------- */
 	padding: 0;
 }
 .about span {
-	font-weight: 600;								/* --------> 22px <-------- */
+	font-weight: 600;		/* --------> 22px <-------- */
 	color: #033048;	
 	display: block;
 }
@@ -158,6 +169,9 @@ li {
 	height: 140px;
 	margin: 0 auto;
 	padding-top: 40px;
+}
+.signup a:hover {
+	opacity: 1;
 }
 
 /* Footer 
